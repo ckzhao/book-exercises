@@ -40,7 +40,8 @@ small <- phone_number[phone_number<=5]
 large <- phone_number[phone_number>5]
 
 # Replace the values in `phone_numbers` that are larger than 5 with the number 5
-phone_number[phone_number>5] <- 5
+phone_number[phone_number > 5] <- 5
 
 # Replace every odd-numbered value in `phone_numbers` with the number 0
-phone_number[phone_number +1 /2] <- 0
+phone_number[phone_number + 1 / 2] <- 0 
+
