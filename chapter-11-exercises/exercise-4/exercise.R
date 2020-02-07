@@ -25,7 +25,7 @@ View(flights)
 
 # Use `dplyr` to sort your data frame in descending order by the column you just
 # created. Remember to save this as a variable (or in the same one!)
-flights <- arrange(flights, -delayed_in_air)
+flights <- arrange(flights, - delayed_in_air)
 View(flights)
 
 # For practice, repeat the last 2 steps in a single statement using the pipe
