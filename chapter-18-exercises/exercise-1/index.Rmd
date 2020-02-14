@@ -1,0 +1,43 @@
+##  **reports**
+
+This is just plain old Markdown that lets you render text in **bold** and _italics_. 
+
+---
+title: "R Markdown Demo"
+author: "Cindy Zhao"
+date: "2/1/2020"
+output: "html_document"
+---
+  
+```{r example, echo = FALSE}
+source(exercise.R)
+numbers <- runif(1:100)
+hist(numbers)
+numbers_mean <- mean(numbers)
+
+img_url <- "http://3.bp.blogspot.com/-OxjnriVozpA/Tygg4H3EJ7I/AAAAAAAAAH0/-SADEU_Ubso/s1600/Dog_020012.jpg"
+
+link <- "ttps://developer.nytimes.com/"
+
+img_markdown <- paste0("![puppies ](", img_url")")
+
+letters <- c("a", "b", "c", "d")
+numbers <- 1:4
+df <- data.frame()
+
+```
+
+
+`r img_markdown`
+`r kable(df)`
+
+
+
+
+
+
+The mean of the numbers happens to be **`r numbers_mean`**.
+
+```{r other_chunk}
+print(numbers)
+```
